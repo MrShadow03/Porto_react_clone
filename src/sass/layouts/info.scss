@@ -1,0 +1,101 @@
+section.info {
+    padding-bottom: 2rem;
+    .blog {
+        display: flex;
+        justify-content: flex-end;
+        .blog_block {
+            width: 68%;
+            margin-right: 1rem;
+            .blog_text {
+                padding-top: 5rem;
+            }
+            .flora {
+                padding-bottom: 3rem;
+                padding-top: 2rem;
+            }
+            .slider {
+                padding-bottom: 2rem;
+                .slide1 {
+                    padding-bottom: 5rem;
+                    .news1 {
+                        margin-top: 2rem;
+                        background-color: #fff;
+                        display: flex;
+                        .blog-text {
+                            justify-content: space-between;
+                            h1 {
+                                padding-top: 2rem;
+                                color: #212529;
+                                opacity: 0.75;
+                            }
+                            a {
+                                padding-bottom: 2rem;
+                                font-size: 1.4rem;
+                            }
+                            h1,
+                            a,
+                            p {
+                                padding-left: 2rem;
+                                padding-right: 2rem;
+                            }
+                            p {
+                                font-size: 1.26rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .team {
+        display: flex;
+        justify-content: flex-start;
+        .blog_block {
+            width: 68%;
+            margin-left: 1rem;
+            .blog_text {
+                padding-top: 5rem;
+            }
+            .flora {
+                padding-bottom: 3rem;
+                padding-top: 2rem;
+            }
+            .slider {
+                .slide1 {
+                    display: flex;
+                    gap: 3rem;
+                    padding-bottom: 5rem;
+                    .news1 {
+                        margin-top: 2rem;
+                        background-color: #fff;
+                        display: flex;
+                        flex-direction: column;
+                        height: 39.3rem;
+                        width: 48%;
+                        .blog-text {
+                            justify-content: space-between;
+                            h1 {
+                                padding-top: 3rem;
+                                color: #212529;
+                                opacity: 0.75;
+                            }
+                            a {
+                                padding-bottom: 2rem;
+                                font-size: 1.4rem;
+                            }
+                            h1,
+                            a,
+                            p {
+                                padding-left: 2rem;
+                                padding-right: 2rem;
+                            }
+                            p {
+                                font-size: 1.26rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

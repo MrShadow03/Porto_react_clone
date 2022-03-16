@@ -1,0 +1,74 @@
+section.meal {
+    padding-top: 8rem;
+    .container {
+        .e-cards {
+            margin-top: 8rem;
+            margin-bottom: 8rem;
+            display: flex;
+            justify-content: space-between;
+            .e-card {
+                width: 27.7%;
+                border: 1px solid #ccc;
+                //overflow: hidden;
+                position: relative;
+                .img1 {
+                    overflow: hidden;
+                    .e-card-img1 {
+                        transition: transform 0.15s ease-in-out;
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                .e-card-img2 {
+                    position: absolute;
+                    top: 14rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+                .e-card-text {
+                    margin-top: 5rem;
+                    padding: 3rem;
+                    h1 {
+                        padding-bottom: 2.5rem;
+                    }
+                    p {
+                        padding-bottom: 2rem;
+                    }
+                }
+                a {
+                    position: absolute;
+                    bottom: -2rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: 2;
+                }
+                &::after {
+                    content: "";
+                    width: 98%;
+                    height: 5px;
+                    z-index: 1;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-bottom: 1px solid #ccc;
+                    border-left: 1px solid #ccc;
+                    border-right: 1px solid #ccc;
+                }
+                &::before {
+                    content: "";
+                    width: 95%;
+                    height: 5px;
+                    z-index: 1;
+                    position: absolute;
+                    bottom: -9px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-bottom: 1px solid #ccc;
+                    border-left: 1px solid #ccc;
+                    border-right: 1px solid #ccc;
+                }
+            }
+        }
+    }
+}

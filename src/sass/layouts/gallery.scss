@@ -1,0 +1,134 @@
+section.gallery {
+    padding-bottom: 8rem;
+    .gallery_box {
+        width: 85%;
+        padding-top: 8rem;
+        display: grid;
+        grid-template-areas:
+            "a b b c"
+            "d b b e";
+        grid-template-rows: 1fr 1fr;
+        .item {
+            overflow: hidden;
+            position: relative;
+            img {
+                width: 100%;
+                transition: all 0.25s ease-in-out;
+            }
+
+            &:hover {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                background-color: #000000a8;
+                opacity: 0;
+                z-index: 1;
+                transition: all 0.25s ease-in-out;
+            }
+            &:hover::before {
+                opacity: 1;
+            }
+            &:hover::after {
+                opacity: 1;
+                transition: all 0.25s ease-in-out;
+            }
+        }
+        .item-1 {
+            grid-area: a;
+            position: relative;
+            &::after {
+                content: "Fruit Cake";
+                font-family: "poppins", sans-serif;
+                font-size: 2rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 3;
+                color: #fff;
+                font-weight: 300;
+                line-height: 4rem;
+                opacity: 0;
+            }
+        }
+        .item-featured {
+            grid-area: b;
+            img {
+                width: 100%;
+            }
+            &::after {
+                content: "Vegetable Shwarma";
+                font-family: "poppins", sans-serif;
+                font-size: 2rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 3;
+                color: #fff;
+                font-weight: 300;
+                line-height: 4rem;
+                opacity: 0;
+            }
+        }
+        .item-3 {
+            grid-area: c;
+            &::after {
+                content: "Lato & Coffee";
+                font-family: "poppins", sans-serif;
+                font-size: 2rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 3;
+                color: #fff;
+                font-weight: 300;
+                line-height: 4rem;
+                opacity: 0;
+            }
+        }
+        .item-4 {
+            grid-area: d;
+            &::after {
+                content: "Fish Chilli";
+                font-family: "poppins", sans-serif;
+                font-size: 2rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 3;
+                color: #fff;
+                font-weight: 300;
+                line-height: 4rem;
+                opacity: 0;
+            }
+        }
+        .item-5 {
+            grid-area: e;
+            &::after {
+                content: "Fruit Juice";
+                font-family: "poppins", sans-serif;
+                font-size: 2rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 3;
+                color: #fff;
+                font-weight: 300;
+                line-height: 4rem;
+                opacity: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+section.banner2 {
+    background-image: url("./img/parallax-restaurant.jpg");
+    background-size: cover;
+    height: 60rem;
+    background-position: 50% 80%;
+    margin-bottom: 8rem;
+    img {
+        padding-top: 10rem;
+    }
+    .slider {
+        padding-top: 5rem;
+        .slide1 {
+            p {
+                text-align: center;
+                position: relative;
+                margin-top: 20px;
+                &::before {
+                    content: "“";
+                    font-size: 10rem;
+                }
+                &::after {
+                    content: "”";
+                    font-size: 10rem;
+                    position: absolute;
+                    bottom: -30%;
+                    right: 23%;
+                }
+            }
+            h1 {
+                padding-top: 5rem;
+            }
+        }
+    }
+}

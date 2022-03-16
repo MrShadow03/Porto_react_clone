@@ -1,0 +1,43 @@
+section.menu {
+    padding-top: 8rem;
+    .container {
+        .menu_items {
+            padding-top: 8rem;
+            .item {
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 5rem;
+                .menu_details {
+                    display: flex;
+                    align-items: center;
+                    .item_text {
+                        margin-left: 3rem;
+                        p {
+                            background-color: #fff;
+                            padding-right: 2rem;
+                        }
+                    }
+                }
+                hr {
+                    width: 80%;
+                    border-bottom: 1px dashed;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0.3rem;
+                    z-index: -1;
+                }
+                .menu_price {
+                    background-color: #fff;
+                    padding: 2.5rem 0rem 0rem 2rem;
+                }
+            }
+        }
+        .menu-footer {
+            background-image: url("./img/background-restaurant.png");
+            background-repeat: no-repeat;
+            background-position: 50% 100%;
+        }
+    }
+}

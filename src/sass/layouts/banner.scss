@@ -1,0 +1,28 @@
+section.banner {
+    height: 65rem;
+    background-image: url("./img/slides/slide-restaurant-1.jpg");
+    .container {
+        position: relative;
+        .content {
+            position: absolute;
+            top: 21rem;
+            p {
+                padding-bottom: 3rem;
+            }
+        }
+    }
+}
+section.banner_two {
+    height: 65rem;
+    background-image: url("./img/slides/slide-restaurant-2.jpg");
+    .container {
+        position: relative;
+        .content {
+            position: absolute;
+            top: 21rem;
+            p {
+                padding-bottom: 3rem;
+            }
+        }
+    }
+}
